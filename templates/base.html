@@ -34,6 +34,17 @@
                     HOME
                 </a>
             </li>
+            <!-- Add category and tags in navigator -->
+            <li class="navbar-item">
+            <a class="navbar-link" href="{{ SITEURL }}/category/categories.html">
+                    Category
+                </a>
+            </li>
+            <li class="navbar-item">
+            <a class="navbar-link" href="{{ SITEURL }}/tag/tags.html">
+                    Tags
+                </a>
+            </li>
             {% for page in pages|sort %}
                 <li class="navbar-item">
                     <a class="navbar-link" href="{{ SITEURL }}/{{ page.url }}">
