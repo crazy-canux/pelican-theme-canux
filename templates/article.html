@@ -5,9 +5,11 @@
 {% block container %}
     <section id="content">
         <article>
+            <!-- don't need show the data in front of the article.
             <p class="article-date">
                 {{ article.date }}
             </p>
+            -->
             <header class="header">
                 <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">
                     <h2 class="blogpost-title">
@@ -17,6 +19,10 @@
             </header>
             <div>
                 {{ article.content }}
+            </div>
+            <!-- Show reward in every article -->
+            <div>
+            {% include 'reward.html' %}
             </div>
             <div class="article-info">
                 <hr/>
